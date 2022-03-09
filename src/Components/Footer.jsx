@@ -15,8 +15,8 @@ export default function Footer() {
               <div className="col-auto">
                 <p className="pt-2">
                   <strong>
-                    Не все любят BMW, но однажды проедешь на ней и ты поменяешь
-                    свое решение!
+                    Самое главное и ценное в жизни-это семья. Сначала та, в
+                    которой ты рождаешься, а затем та, которую создаешь сам.
                   </strong>
                 </p>
               </div>
@@ -25,7 +25,11 @@ export default function Footer() {
         </section>
 
         <section className="mb-4">
-          <p>Наш диллер отвечает за качество</p>
+          <p>
+            Семья – самое важное в жизни. У тебя могут быть удачные дни, могут
+            быть отвратительные, но вечером каждого дня дома тебя кто-то будет
+            ждать.
+          </p>
         </section>
 
         <section className="">
@@ -62,7 +66,7 @@ export default function Footer() {
             </MDBCol>
 
             <MDBCol lg="3" md="6" className="mb-4 mb-md-0">
-              <h6 className="text-uppercase">Наша деятельность</h6>
+              <h6 className="text-uppercase">Мой Блог</h6>
 
               <ul className="list-unstyled mb-0">
                 <li>
@@ -82,7 +86,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <a href="#!" className="text-white">
-                    История создания BMW
+                    Моя работа
                   </a>
                 </li>
               </ul>

@@ -1,14 +1,12 @@
 {
   "tickets": [
     {
-      "title": "dadad",
+      "title": "Привет",
       "model": "День",
-      "image": {
-        "Zabyl": "/static/media/забыл.58a6cb1ab983217c1175.jpg"
-      },
-      "price": 12122,
+      "image": "",
+      "price": "10000",
       "type": "Школа",
-      "description": "aadada",
+      "description": "Гуляли где-то",
       "id": 1
     },
     {
@@ -21,15 +19,6 @@
       "type": "Школа",
       "description": "dadada",
       "id": 2
-    },
-    {
-      "title": "Akbar",
-      "model": "Вечер",
-      "image": "/static/media/забыл.58a6cb1ab983217c1175.jpg",
-      "price": 2131313,
-      "type": "Дом",
-      "description": "ad;la,;,da",
-      "id": 3
     }
   ]
 }

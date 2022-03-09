@@ -23,6 +23,7 @@ import { ticketContext } from "../../../Contexts/TicketContext";
 import AddAPhotoIcon from "@mui/icons-material/AddAPhoto";
 import VolunteerActivismIcon from "@mui/icons-material/VolunteerActivism";
 import PhotoCameraIcon from "@mui/icons-material/PhotoCamera";
+import "./MyNavbar.css";
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
@@ -194,7 +195,7 @@ export default function MyNavbar() {
       open={isMobileMenuOpen}
       onClose={handleMobileMenuClose}
     >
-      <Link to="/cart" style={{ color: "red" }}>
+      <Link className="icons" to="/cart" style={{ color: "red" }}>
         <IconButton color="inherit">
           <Badge badgeContent={cartLength} color="secondary">
             <ShoppingCartIcon />
@@ -211,7 +212,17 @@ export default function MyNavbar() {
         >
           <AccountCircle />
         </IconButton>
-        <p>Profile</p>
+        {currentUser?.email}
+      </MenuItem>
+      <MenuItem>
+        <Box sx={{ display: { xs: "none", sm: "flex" } }} />
+        {currentUser?.email === "akbar67.kg@gmail.com" ? (
+          <Link to="/add" style={{ textDecoration: "none" }}>
+            <Button style={{ backgroundColor: "alpha", color: "black" }}>
+              <AddAPhotoIcon />
+            </Button>
+          </Link>
+        ) : null}
       </MenuItem>
     </Menu>
   );
@@ -231,6 +242,7 @@ export default function MyNavbar() {
         <Toolbar>
           <IconButton>
             <img
+              className="icons"
               src="https://logos.textgiraffe.com/logos/logo-name/Akbar-designstyle-panda-m.png"
               width="80px"
               style={{ borderRadius: "20px" }}
@@ -259,17 +271,7 @@ export default function MyNavbar() {
             />
           </Search>
 
-          <Box sx={{ flexGrow: 1 }} />
-          {currentUser?.email === "akbar67.kg@gmail.com" ? (
-            <Link to="/add" style={{ textDecoration: "none" }}>
-              <Button style={{ backgroundColor: "alpha", color: "white" }}>
-                <AddAPhotoIcon />
-              </Button>
-            </Link>
-          ) : null}
-          {currentUser?.email}
-
-          <Box sx={{ display: { xs: "none", md: "flex" } }}>
+          <Box className="icons" sx={{ display: { xs: "none", md: "flex" } }}>
             <Link to="/favourites" style={{ color: "white" }}>
               <IconButton>
                 <Badge>
@@ -297,7 +299,7 @@ export default function MyNavbar() {
               <AccountCircle />
             </IconButton>
           </Box>
-          <Box sx={{ display: { xs: "flex", md: "none" } }}>
+          <Box className="icons" sx={{ display: { xs: "flex", md: "none" } }}>
             <IconButton
               size="large"
               aria-label="show more"

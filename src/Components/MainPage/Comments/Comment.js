@@ -123,6 +123,6 @@ class Comment extends React.Component {
     );
   }
   _deleteComment() {
-    alert("-- DELETE Comment Functionality COMMING SOON...");
+    // alert("-- DELETE Comment Functionality COMMING SOON...");
   }
 }
